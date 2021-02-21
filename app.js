@@ -1,7 +1,7 @@
 const fromAnotherFile = require("./functions")
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 //kod JS
 //ustawienie, ze moja aplikacja musi korzystac z silnika hbs
 app.set("view engine", 'hbs')
