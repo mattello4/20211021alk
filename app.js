@@ -1,4 +1,4 @@
-const fromAnotherFile = require("./functions")
+const fromAnotherFile = require("./function")
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,7 +24,7 @@ res.send("My site")
 var path = require('path')
 app.use('/assets', express.static(path.join(__dirname, "./assets")));
 //podpięcie js
-app.use('/js', express.static(path.joisssn(__dirname, "./js")));
+app.use('/js', express.static(path.join(__dirname, "./js")));
 //server
 app.listen(port, (err) => {
 if (err) {
